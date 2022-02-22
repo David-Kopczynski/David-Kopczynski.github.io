@@ -1,112 +1,129 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cosmos Coffee Cats</title>
+    <link rel="icon" href="icon.png" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Cosmos Coffee Cats</title>
-  <link rel="icon" href="icon.png" />
+    <!-- html -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
 
-  <!-- html -->
-  <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- stars -->
+    <link rel="stylesheet" type="text/css" href="stars/stars.css" />
 
-  <!-- stars -->
-  <link rel="stylesheet" type="text/css" href="stars/stars.css" />
+    <!-- beans -->
+    <script src="./beans/beans.js"></script>
+    <link rel="stylesheet" type="text/css" href="beans/beans.css" />
 
-  <!-- beans -->
-  <script src="./beans/beans.js"></script>
-  <link rel="stylesheet" type="text/css" href="beans/beans.css" />
+    <!-- holo -->
+    <link rel="stylesheet" type="text/css" href="holo/holo.css" />
 
-  <!-- holo -->
-  <link rel="stylesheet" type="text/css" href="holo/holo.css" />
+    <!-- content -->
+    <link rel="stylesheet" type="text/css" href="content/content.css" />
 
-  <!-- content -->
-  <link rel="stylesheet" type="text/css" href="content/content.css" />
+    <style>
+      .impressum {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: rgb(173 255 255);
+        font-family: Impact;
+        margin: 0.1rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
 
-  <style>
-    .impressum {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      color: rgb(173 255 255);
-      font-size: 20px;
-      font-family: Impact;
-      margin: 0.1rem;
-      cursor: pointer;
-    }
-  </style>
-</head>
-
-<body>
-  <div style="position: relative; user-select: none;">
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
-  </div>
-
-  <div id="title">
-    <h1 style="font-family: Impact; font-size: 150px; width: 0;overflow: visible; margin: 0">Cosmos Coffee Cats</h1>
-    <img style="margin-top: auto" id="logo" src="./content/Logo.png" />
-  </div>
-  
-  <div style="user-select: none;" id="bean"></div>
-
-  <div class="impressum">Impressum</div>
-  
-  <div id="contentWrapper">
-    <div style="position: absolute; width: 40vw; height: 80%; bottom: 10%" id="content">
-      <h1 style="text-align: center; font-size: 2.5rem;">MOST WANTED</h1>
-      <div id="cats">
-        <div class="bio">
-          <img src="./content/cats/Cindy.jpg"></img>
-          Cindy die Unerfindliche
-        </div>
-        <div class="bio">
-          Rampino der Dreiste
-          <img src="./content/cats/Rampino.jpg"></img>
-        </div>
-        <div class="bio">
-          <img src="./content/cats/Elvis.jpg"></img>
-          Elvis der Weltenbummler
-        </div>
-        <div class="bio">
-          Luna Lunatic
-          <img src="./content/cats/Luna.jpg"></img>
-        </div>
-      </div>
-
-      <h1 style="text-align: center; font-size: 2.5rem;">REWARDS</h1>
-      <div style="width: 100%;" class="table">
-        <div>
-          <div>Rampino Classic</div>
-          <div>6.99₩</div>
-        </div>
-        <div>
-          <div>Irish Elvis</div>
-          <div>4.79₩</div>
-        </div>
-        <div>
-          <div>Luna Lungo</div>
-          <div>4.85₩</div>
-        </div>
-        <div>
-          <div>Cindy Macchiato</div>
-          <div>4.29₩</div>
-        </div>
-        <div>
-          <div>Caffee au Luna</div>
-          <div>3.49₩</div>
-        </div>
-        <div>
-          <div>Black Ramp</div>
-          <div>2.99₩</div>
-        </div>
-      </div>
-
-      <h2 style="text-align: center; margin-top: 3rem;"><span style="text-decoration: line-through;">Be</span>suchen Sie
-        uns in einer weit, weit entfernten Galaxis...</h2>
+  <body>
+    <div style="position: relative; user-select: none">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
     </div>
-    <div style="position: absolute; bottom: 5%" class="holo"></div>
-  </div>
-</body>
 
+    <div id="title">
+      <div
+        style="
+          font-family: Impact;
+          font-size: 7rem;
+          width: 0;
+          overflow: visible;
+          margin: 0;
+        "
+      >
+        Cosmos Coffee Cats
+      </div>
+      <img
+        style="margin-top: auto"
+        id="logo"
+        src="./content/Logo.png"
+        alt="Logo"
+      />
+    </div>
+
+    <div style="user-select: none; pointer-events: none" id="bean"></div>
+
+    <div class="impressum">Impressum</div>
+
+    <div id="contentWrapper">
+      <div
+        style="position: absolute; width: 40vw; height: 80%; bottom: 10%"
+        id="content"
+      >
+        <h1 style="text-align: center">MOST WANTED</h1>
+        <div id="cats">
+          <div class="bio">
+            <img src="./content/cats/Cindy.jpg" alt="Cindy" />
+            Cindy die Unerfindliche
+          </div>
+          <div class="bio">
+            Rampino der Dreiste
+            <img src="./content/cats/Rampino.jpg" alt="Rampino" />
+          </div>
+          <div class="bio">
+            <img src="./content/cats/Elvis.jpg" alt="Elvis" />
+            Elvis der Weltenbummler
+          </div>
+          <div class="bio">
+            Luna Lunatic
+            <img src="./content/cats/Luna.jpg" alt="Luna" />
+          </div>
+        </div>
+
+        <h1 style="text-align: center">REWARDS</h1>
+        <div style="width: 100%" class="table">
+          <div>
+            <div>Rampino Classic</div>
+            <div>6.99₩</div>
+          </div>
+          <div>
+            <div>Irish Elvis</div>
+            <div>4.79₩</div>
+          </div>
+          <div>
+            <div>Luna Lungo</div>
+            <div>4.85₩</div>
+          </div>
+          <div>
+            <div>Cindy Macchiato</div>
+            <div>4.29₩</div>
+          </div>
+          <div>
+            <div>Caffee a la Luna</div>
+            <div>3.49₩</div>
+          </div>
+          <div>
+            <div>Black Ramp</div>
+            <div>2.99₩</div>
+          </div>
+        </div>
+
+        <h2 style="text-align: center; margin-top: 2rem">
+          <span style="text-decoration: line-through">Be</span>suchen Sie uns in
+          einer weit, weit entfernten Galaxis...
+        </h2>
+      </div>
+      <div style="position: absolute; bottom: 5%" class="holo"></div>
+    </div>
+  </body>
 </html>

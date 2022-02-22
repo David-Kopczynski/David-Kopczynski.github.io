@@ -93,11 +93,9 @@ body {
 }
 
 #logo {
-  width: 40rem;
-  height: 40rem;
   object-fit: contain;
-  transform: scaleX(-1);
   animation: float 1s infinite alternate;
+  height: 50%;
 }
 
 .table {
@@ -110,4 +108,18 @@ body {
   display: table-cell;
   padding: 0.1rem;
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  #title {
+    display: none;
+  }
+
+  #contentWrapper {
+    width: 100%;
+  }
+
+  #content {
+    width: 60vw !important;
+  }
 }
