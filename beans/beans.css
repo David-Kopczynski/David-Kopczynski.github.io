@@ -1,0 +1,17 @@
+@keyframes beanAnimation {
+  0% {
+    top: -2rem;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+#bean {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}

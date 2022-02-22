@@ -1,0 +1,20 @@
+#cats .bio {
+  display: flex;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  font-size: 2rem;
+}
+
+#cats .bio:nth-child(even) {
+  justify-content: right;
+}
+
+#cats .bio > img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  filter: grayscale(0.5) brightness(1.2) sepia(0.1);
+}

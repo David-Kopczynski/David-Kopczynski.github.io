@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#contentWrapper {
+  height: 100%;
+  width: 75%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  float: right;
+  overflow: hidden;
+}
+
+#content {
+  color: rgb(173 255 255);
+  filter: drop-shadow(2px 4px 6px black);
+  overflow: auto;
+  animation: float 1s infinite alternate;
+}
+
+@-webkit-keyframes float {
+  from {
+    will-change: unset;
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  to {
+    will-change: transform;
+    transform: translateY(-3px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes float {
+  from {
+    will-change: unset;
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  to {
+    will-change: transform;
+    transform: translateY(-3px);
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px rgb(53, 255, 255),
+      0 0 10px rgb(53, 255, 255), 0 0 12px rgb(53, 255, 255),
+      0 0 15px rgb(53, 255, 255), 0 0 20px rgb(53, 255, 255);
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 7px rgb(173 255 255),
+      0 0 10px rgb(173 255 255), 0 0 12px rgb(173 255 255),
+      0 0 15px rgb(173 255 255), 0 0 20px rgb(173 255 255),
+      0 0 20px rgb(173 255 255);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px rgb(53, 255, 255),
+      0 0 10px rgb(53, 255, 255), 0 0 12px rgb(53, 255, 255),
+      0 0 15px rgb(53, 255, 255), 0 0 20px rgb(53, 255, 255);
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 7px rgb(173 255 255),
+      0 0 10px rgb(173 255 255), 0 0 12px rgb(173 255 255),
+      0 0 15px rgb(173 255 255), 0 0 20px rgb(173 255 255),
+      0 0 20px rgb(173 255 255);
+  }
+}
+
+#title {
+  width: 25%;
+  height: calc(100% - 2 * 2rem);
+  display: flex;
+  padding: 2rem;
+  animation: glow 1s infinite alternate;
+}
+
+#logo {
+  width: 40rem;
+  height: 40rem;
+  object-fit: contain;
+  transform: scaleX(-1);
+  animation: float 1s infinite alternate;
+}
+
+.table {
+  display: table;
+}
+.table > div {
+  display: table-row;
+}
+.table > div > div {
+  display: table-cell;
+  padding: 0.1rem;
+  font-size: 2rem;
+}
