@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
         position: absolute;
         width: 4rem; 
         height: 4rem;
-        top: -2rem; 
+        top: -4rem; 
         animation: beanAnimation ${Math.random() * 20 + 20}s linear -${
       Math.random() * 25
     }s infinite;
