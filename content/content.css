@@ -6,8 +6,8 @@
   font-size: 2rem;
 }
 
-#cats .bio:nth-child(even) {
-  justify-content: right;
+#cats .bio:nth-of-type(even) {
+  justify-content: end;
 }
 
 #cats .bio > img {
